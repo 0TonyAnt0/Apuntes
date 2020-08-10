@@ -1,0 +1,23 @@
+git show "nombre.txt"::::::::::::::::::::::::::::::::::: Muestra cambios en archivo
+git diff "id de cambio" "id cambio" :::::::::::::::::::: Compara los cambios hechos
+git reset "id de cambio" --Hard/soft ::::::::::::::::::: Volver a versión anterior
+git log --stat ::::::::::::::::::::::::::::::::::::::::: Ver cambios especificos
+git checkout "id cambio" "nombre.txt"::::::::::::::::::: Regresa el archivo en la versión que se pide
+
+
+
+git clone "url"::::::::::::::::::::::::::::::::::::::::: clona el repositorio basado en un servidor
+git push ::::::::::::::::::::::::::::::::::::::::::::::: Manda todo al repositorio remoto
+
+git pull:::::::::::::::::::::::::::::::::::::::::::::::: hace estas 2 cosas
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+git fetch::::::::::::::::::::::::::::::::::::::::::::::: Actualiza el repositorio basado en lo cambiado en nube
+git merge::::::::::::::::::::::::::::::::::::::::::::::: Traer archivos de nube
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+gut commit -am:::::::::::::::::::::::::::::::::::::::::: Hace add y commit
+
+:::::::::::::::::::::::::UNIR:::::::::::::::::::::::::::::::::::::::
+Para fucionar 2 ramas se necesita estar en la rama master
+git merge "Nombre branch" :::::::::::::::::::::::::::::: Fuciona las 2 ramas
+

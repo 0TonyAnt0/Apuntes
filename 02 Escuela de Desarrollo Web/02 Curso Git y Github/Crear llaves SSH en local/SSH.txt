@@ -1,0 +1,25 @@
+Cambiar al correo de git hub por lo que necesitas ver sí es el mismo, desde raíz se escribe.
+- git config -l::::::::::::::::::::::::::::::::::::::::::::::::: muestra los datos de git
+- $ git config --global user.email "wakeup210400@gmail.com" :::: cambiar email
+Generar una nueva llave SSH: (Cualquier sistema operativo)
+- ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Lugar de almacenamiento, solo dar enter
+Añadir una contraseña, solo dar enter
+y enter
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+El simbolo de la ñ se ecribe con alt + 126 ~
+
+Comprobar proceso y agregarlo (Windows)
+- eval $(ssh-agent -s)
+debe salir agent pid
+- ssh-add ~/.ssh/id_rsa
+Ya se habra añadido
+***********************************Añadir GidHub************************
+1.- Entrar a git hub en configuraciones y ssh, añadir una nueva llave y poner tu contraseña.
+2.- Ir a repositorio y copiar URL de ssh en CODE
+3.- entrar a git y escribir el código
+- git remote set-url origin "url"
+- gut pull origin master::::::::::::::::::: actualizas repositorio
+- 
+

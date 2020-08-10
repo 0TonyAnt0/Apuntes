@@ -1,0 +1,117 @@
+Apuntes:
+
+________________________________OPERADORES__________________________
+- $var++: Cuando se formula por primera vez no presenta cambios respecto a la original 
+😯 , si después se llama a $variable, aparece el incremento.
+- continue; avanzar a la siguiente iteración.
+- break; Rompe un ciclo o un bloque de código
+- ++$var: Cuando es formulado, el incremento aparece desde la primera vez.
+- floor(); Regresa el entero inferior.
+:::::::::::::::::::::::::::::::::IMPORTAR::::::::::::::::::::::::::::::::::::::::
+include(‘archivo.php’);
+include_once(‘archivo.php’);
+require(‘archivo.php’);
+require_once(‘archivo.php’); 
+
+
+- include: agrega un archivo sin importar si ya fué agregado. Si el archivo no 
+	existe, solo arroja un warning como mensaje de error.
+- include_once, al igual que include, agrega el archivo pero solo una vez. 
+	Si el archivo ya había sido agregado anteriormente, arroja un warning.
+	Si el archivo no existe, tambien mostrará warning.
+- require, agrega un archivo las veces que se llame a la funcion sin importar 
+	si estaba agregado o no. PERO, si el archivo no existe, arroja un error fatal.
+- require_once, permite agregar el archivo externo una sola vez. Si se repite, 
+	arroja error fatal y si el archivo no existe, tambien arroja error fatal y termina la ejecución del programa.
+
+________________________________CODIGOS____________________________
+var_dump + 'variable': muestra que está pasando con la variable.
+$idx=count($jobs); cuenta el numero de variables dentro del arreglo.
+
+------------------------------ARREGLOS-----------------------------------
+
+:::::::::::::::::::::::::ARREGLOS NORMALES:::::::::::::::::::::::::
+
+ Mandar a llamar arreglo: $jobs[0];
+  $jobs= [
+    'PHP Developer',
+    'Python Dev',
+    'title' => 'Devops'
+  ];
+:::::::::::::::::::::ARREGLOS REMIFICADOS::::::::::::::::::::::::::::
+
+Mandar a llamar arreglo: <?php echo $jobs[0]['title']; ?>
+  $jobs= [
+    [    
+      'title' => 'PHP Developer',
+      'description' => 'Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit'
+    ],
+    [ 
+      'title' => 'Python Dev',
+    ],
+    [ 
+      'title' => 'Devops'
+    ]
+  ];
+::::::::::::::::::::::::::::::FOREACH:::::::::::::::::::::::::::::::::::
+https://platzi.com/clases/1338-php/12923-while-vs-do-while/
+
+array es el arreglo y se repite según la cantidad de datos que contenga
+y el $valor toma el valor de el array en el momento inicial y así mientras se recorre.
+
+foreach ($array as $valor) {
+    sentencias que pueden usar $valor
+}
+
+Tambien se puede tomar la llave además del valor y se hace de la siguiente forma.
+
+foreach ($array as $llave => $valor) {
+    sentencias que pueden usar $llave y $valor
+}
+------------------------------Ciclos-----------------------------------------
+::::::::::: Do-While ::::::::::::::::::
+<?php 
+              $idx=count($jobs); 
+              do{
+                  echo '<li class="work-position">';
+                   echo' <h5>'.$jobs[$idx]['title'].'</h5>';
+                    echo'<p>'.$jobs[$idx]['description'].'?></p>';
+                    echo'<strong>Achievements:</strong>';
+                    echo'<ul>';
+                    echo'<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                    echo'<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                    echo'<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                    echo'</ul>';
+                  echo'</li>';
+                  $idx +=1;
+              }while($idx<3);
+            
+            ?>
+:::::::::::::: FOR :::::::::::::::::::::::::::::::::
+$idx=count($jobs);
+              for($i=0;$i<$idx;$i++) 
+              {
+                  echo '<li class="work-position">';
+                   echo' <h5>'.$jobs[$i]['title'].'</h5>';
+                    echo'<p>'.$jobs[$i]['description'].'?></p>';
+                    echo'<strong>Achievements:</strong>';
+                    echo'<ul>';
+                    echo'<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                    echo'<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                    echo'<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+                    echo'</ul>';
+                  echo'</li>';
+              }
+
+
+
+
+
+_________________________________NOTAS______________________________
+- Concatenas con puntos: $name.$lastname
+- Las comillas dobles buscan variables dentro de ellas, las comillas simples no lo hacen
+
+_________________________________Enlaces_____________________________
+
+- variables: https://platzi.com/clases/1338-php/12919-tipos-de-datos-en-php/
+-FOREACH https://platzi.com/clases/1338-php/12923-while-vs-do-while/

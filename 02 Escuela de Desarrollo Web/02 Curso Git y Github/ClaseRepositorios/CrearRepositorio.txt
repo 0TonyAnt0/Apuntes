@@ -1,0 +1,21 @@
+git init::::::::::::::::::::::::::::::::::::::: Iniciar Git
+git status :::::::::::::::::::::::::::::::::::: Muestra estus
+git add "nombre.txt"::::::::::::::::::::::::::: Añade un archivo
+git rm --cached "nombre.txt"::::::::::::::::::: Saca el archivo
+git commit -m ""mensaje"":::::::::::::::::::::: Añade al repositorio
+git config::::::::::::::::::::::::::::::::::::: Lista de configuraciones
+git config --list:::::::::::::::::::::::::::::: Configuración por defecto y cosas que le faltan
+git config --list --show-origin:::::::::::::::: Avanzado
+git config --global:::::::::::::::::::::::::::: Configuraciones globales
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+git config --global user.name "TonyAnt"
+git config --global user.email "tonyanr251098@gmail.com"
+configurar email y nombre de usuario
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+git log "nombre.txt"::::::::::::::::::::::::::: Muestra los cambios
+
+
+
+COMANDOS SIMPLES
+cat "nombre.txt":::::::::::::::::::::::::::::: Ver contenido
+code "nombre.txt"::::::::::::::::::::::::::::: abre visual studio 

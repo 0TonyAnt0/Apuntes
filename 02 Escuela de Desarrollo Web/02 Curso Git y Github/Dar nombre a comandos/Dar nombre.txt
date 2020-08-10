@@ -1,0 +1,36 @@
+-$ git log --all --graph --oneline :::::::::::::::::::::: Ves lo de git log resumido con todo
+1.- Para darle un nombre a una linea de código pones:
+- alias "nombre"=""código""
+- $ alias arbolito="git log --all --graph --oneline"
+
+--------------------TAGS-------------------------------------
+Sirven para hacer versiones:
+- git tag -a "versión" -m ""Mensaje"" codigo del log
+- git tag -a v0.1 -m "Resultado de las primeras clases del curso" aa6a3b6
+
+Para ver tus tags: 
+- git tag::::::::::::::::::::::::::::::::::::::::: Solo tags  
+- git show-ref --tags::::::::::::::::::::::::::::: Con información
+Para mandar los tags a GitHub
+- git push origin --tags
+
+Eliminar tags
+- git tag -d "nombre de tag"
+- git tag -d dormido
+
+Eliminar tags de GitHub
+- $ git push origin :rels/tags/"nombre"
+- $ git push origin :rels/tags/dormido
+
+Mostrar historia de las ramas
+- git show-branch
+- git show-branch --all
+
+
+Mostrar cambios graficamente
+- gitk
+
+Crear branch
+- git push origin "nombre"
+
+

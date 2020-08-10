@@ -1,0 +1,20 @@
+https://getcomposer.org/ Composer
+1.- Descargar composer y meterlo en el proyecto composer.phar.
+2.- Hacer un composer.json con el siguiente código
+{
+    "autoload":{
+        "psr-4":{
+            "App\\":"app/"   
+        }
+    },
+    "require":{
+
+    }
+}
+
+3.- Descargar e intalar el giguiente archivo sí estás en Windows https://getcomposer.org/Composer-Setup.exe 
+4.- Entrar a CMD y instalar composer entrando a la carpeta y ejecutando (php composer.phar install)
+
+YA NO SE NECESITARA USAR REQUIRE SOLO USE use App\Models\{Job, Project, Printable}; con los namespace
+
+PARA MAS FUNCIONES: https://www.php-fig.org/

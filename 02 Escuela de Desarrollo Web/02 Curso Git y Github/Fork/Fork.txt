@@ -1,0 +1,13 @@
+:::::::::::::::::::::Proyectos OpenSorce:::::::::::::::::::::::::::::::
+Lo primero es clonar el proyecto de un repositorio que este publico.
+copiar URL del proyecto, y hacer comando:
+- git clone "URL"
+Se le da en new pull request, despues de hacer los cambios, y puedes comparar lo forks
+
+
+:::::::::::::::: Actualizar proyecto clonado:::::::::::::::::::
+- git remote -v -------------------------------------- Para ver la información
+- git remote add upstream "URL" ---------------------- Traer cambios
+- git pull upstream master --------------------------- Fucionarlo
+- git commit -am ""
+- git push origin master

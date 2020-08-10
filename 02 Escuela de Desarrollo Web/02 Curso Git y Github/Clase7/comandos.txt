@@ -1,0 +1,72 @@
+********************************Conectar GITHUB***********************
+- Traer url https del reporitorio en github.
+- git remote add origin "URL"::::::::::::::::::: Conectar con servidor
+- git remote::::::::::::::::::::::::::::::::::::: Motrrá orin (Conectado)
+- git remote -v ::::::::::::::::::::::::::::::::: Muestra direcciones (verbal)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+$ git remote -v
+origin  https://github.com/0TonyAnt0/HyperBlog.git (fetch) traer cosas
+origin  https://github.com/0TonyAnt0/HyperBlog.git (push) enviar cosas
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+- git push origin master::::::::::::::::::::::::::::: enviar master y tengremos que logearnos
+mostrará un error debido a que no hemos traido fetch el repositorio antes.(podemos hacer un fetch y push o usar uno que hace ambos "pull")
+- git pull origin master
+mostrará una advertencia ya que aun no hacemos algún commit y no nos deja juntar historias así que tendremos que forzarlo con:
+- git pull origin master --allow-unrelated-histories
+y ahora si está conectado y podemos mandar los archivos
+- git push origin master
+
+
+**Comados**
+comandos de git aprendidos en esta clase:
+----------------------------------------------COMANDOS GIT____________________
+git init: lo usamos para determinar la carpeta en la que vamos a trabajar.
+
+git status: lo usamos para saber si tenemos un archivo añadido o borrado en nuestro proyecto, para saber en la rama en la que estamos y si tenemos commits.
+
+git add: es para añadir un archivo a nuestra rama seguidamente ponemos entre comillas el nombre de nuestro archivo o poner un punto para añadir todos los archios de nuestra carpeta.
+
+git rm: lo usamos para borrar un archivo que hayamos añadido, para eliminarlo por completo de nuestra rama usamosgit rm --cached.
+
+git commit: se usa para añadir un commit a nuestra rama, también podemos ponerle un -m seguidamente ponemos entre comillas nuestro ensaje.
+
+git config: muestra configuraciones de git también podemos usar –list para mostrar la configuración por defecto de nuestro git y si añadimos --show-origin inhales nos muestra las configuraciones guardadas y su ubicación.
+
+git config --global user.name: cambia de manera global el nombre del usuario, seguidamente ponemos entre comillas nuestro nombre.
+
+git config --global user.email: cambia de manera global el email del usuario, seguidamente ponemos entre comillas nuestro nombre.
+
+git log: se usa para ver la historia de nuestros archivos, los commits, el usuario que lo cambió, cuando se realizaron los cambios etc. seguidamente ponemos el nombre de nuestro archivo.
+
+________________________COMANDOS----------------------------
+
+- **$pwd**  Sirve para saber en qué carpeta me encuentro.
+- **$cd**  sirve para navegar entre las carpetas. (“Change Directory CD”). Para navegar a la raíz se escribe ( cd / ) y para salir de una carpeta se escribe ( cd .. ).
+- **$git init** Inicializar un repositorio
+```
+PC10@DESKTOP-FEKHJUV MINGW64 ~
+PC10@DESKTOP-FEKHJUV MINGW64 /
+```
+La diagonal al final de la linea significa que te encuentras en el home. El símbolo como de ñ significa que te encuentras en el lugar del usuario donde están los documentos de git.
+
+- **$ls**  muestra los archivos que se encuentran dentro de la carpeta en la que se está ubicado.
+
+**Argumentos (Van después de los comandos)**
+
+- **-help** te muestra la información del comando a ejecutar.
+
+-  **-a**  es un argumento que después de ls sirve para mostrar igual los archivos ocultos 
+
+-  **-l**  es un argumento que después de ls sirve para mostrar los archivos en una lista.
+
+**Sí queremos mostrar los archivos que se encuentran dentro de la carpeta en la que se está ubicado ( $ls ) mostrar todos los archivos incluso los ocultos ( -a ) y mostrarlos archivos en una lista ( -l ) se podría escribir ( $ls -a -l ) o también juntar los argumentos y escribir ( $ls -al )**
+
+**COMANDOS**
+**COMANDOS**
+- **$mkdir + nombre del directorio**  (make directory) hacer un directorio o crear una carpeta.
+
+- **$touch + nombre del archivo** crea un archivo vació de texto plano.
+
+- **$cat + nombre del archivo** ver el contenido de un archivo
+
+- **$rm + nombre del archivo ** Eliminar archivo

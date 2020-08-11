@@ -1,3 +1,4 @@
+-gitk abre una ventana de cambios
 -git stash::::::::::::::::::::::::::::::: guardar cambios temporales y poder regresar a otra rama
 -git stash list:::::::::::::::::::::::::: ver stash
 -git stash pop :::::::::::::::::::::::::: une los cambios

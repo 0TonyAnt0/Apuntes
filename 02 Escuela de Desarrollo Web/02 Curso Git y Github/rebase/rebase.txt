@@ -1,0 +1,2 @@
+git rebase master :::::::::::::::::: Sirve para parchar mis archivos fucinando 2 branch completos
+git rebase "a donde se va fucionar" Se tienen que hacer en los 2 branch

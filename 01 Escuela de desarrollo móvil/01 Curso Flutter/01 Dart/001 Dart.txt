@@ -1,0 +1,147 @@
+----------------------------------Dart-------------------------------------
+void main() {
+  //print('Hola Mundo');
+  
+//   String nombre='Marco';
+//   print(nombre.length);
+//   print('Hola $nombre');
+  
+//   bool activado=false;
+//   print(activado);
+  
+//   if(activado){
+//     print('Esta bien');
+//   }else{
+//     print('Es falso');
+//   }
+
+
+//   List<int> numeros= [1,2,3,4,5];
+  
+//   print(numeros);
+  
+//   List<int> masNumeros=List(10);
+//   masNumeros[0]=0;
+//   print('Lista de 10 $masNumeros');
+  
+  
+  
+  
+  Map<String, dynamic> persona={
+    'nombre':'Marco',
+    'edad':21,
+    'soltero':true
+    
+  };
+  persona.addAll({'Casado':false});
+  print(persona);
+}
+
+__________________________________CLASES____________________________________________
+void main(){
+  
+  final wolverine= new Heroe(nombre:"Logan",poder:"Regeneración");
+  
+  print(wolverine);
+  
+}
+
+
+
+class Heroe{
+
+  String nombre;
+  String poder;
+  
+  Heroe({String nombre='SN', String poder='SP'}){
+    this.nombre=nombre;
+    this.poder=poder;
+  }
+  
+  String toString(){
+    return '${this.nombre} ${this.poder}';
+  }
+}
+----------------------------------------Hacer clase con menos código
+
+
+class Heroe{
+
+  String nombre;
+  String poder;
+
+  Heroe({this.nombre, this.poder});
+  
+
+  String toString()=>'$nombre $poder';
+  
+}
+
+
+
+__________________________________Hacer Paso con Json___________________________
+
+-----------------Json
+final rawJson='{"nombre":"Logan","poder":"Regeneración"}';
+
+------------------ Importar libreria necesaria
+ import 'dart:convert';
+
+------------------ crear variable tipo Map y asignarle el mapa de json
+ Map parsedJson=json.decode(rawJson);
+
+-------------------Mandar Json al constructor especial de clase Heroe y objeto
+ final wolverine = new Heroe.fromJson(parsedJson);
+---------------------Resivir y asinar valores
+  Heroe.fromJson(Map parsedJson){
+    nombre=parsedJson['nombre'];
+    poder=parsedJson['poder'];
+  }
+
+---------------------------EJEMPLO
+ import 'dart:convert';
+void main(){
+  
+ 
+  final rawJson='{"nombre":"Logan","poder":"Regeneración"}';
+  
+  Map parsedJson=json.decode(rawJson);
+
+
+  final wolverine = new Heroe.fromJson(parsedJson);
+    print(wolverine.nombre);
+    print(wolverine.poder);
+}
+
+
+
+class Heroe{
+
+  String nombre;
+  String poder;
+  
+  Heroe({this.nombre, this.poder});
+  
+  
+  Heroe.fromJson(Map parsedJson){
+    nombre=parsedJson['nombre'];
+    poder=parsedJson['poder'];
+  }
+  
+  
+  String toString()=>'$nombre $poder';
+  
+}
+
+
+
+___________________________________________GETS y SETS
+
+------------------------------------------GET
+double get area=> _lado*_lado;
+------------------------------------------SET
+set lado(double valor){
+	_Lado=valor
+}
+
+

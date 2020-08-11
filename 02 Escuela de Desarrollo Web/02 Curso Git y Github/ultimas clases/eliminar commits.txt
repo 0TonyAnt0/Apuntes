@@ -1,0 +1,14 @@
+los cambios que hagas se pegan al ultimo commit como si fuese uno solo
+- git commit --amend
+
+Todo se va al carajo.
+- git reflog::::::::::::::::::::::::: se va a ver toda la información del proyecto, absolutamente todo
+- git reset --soft HashDelHEAD te mantiene lo que tengas en staging ahí.
+- git reset --hard HashDelHEAD resetea absolutamente todo incluyendo lo que tengas en staging.
+- git reset --hard "id del commit":::::::::::::::resetea todo hasta ese dato
+
+:::::::::::::::::::::: Buscar palabra ::::::::::::::::::::::::::::::::::
+git grep -n "palabra" ::::::::::::::::::::::: ver en donde
+git grep -c "palabra" ::::::::::::::::::::::: cuenta el numero de las palabras
+
+git log -S "palabra"::::::::::::::::::::::::: Lo mismo pero en todos los commits mensajes

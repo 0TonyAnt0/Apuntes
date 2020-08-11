@@ -1,0 +1,9 @@
+-git stash::::::::::::::::::::::::::::::: guardar cambios temporales y poder regresar a otra rama
+-git stash list:::::::::::::::::::::::::: ver stash
+-git stash pop :::::::::::::::::::::::::: une los cambios
+-git stash branch "nombre"::::::::::::::: Añadir cambios de estash a una nueva rama
+
+Cuando guardas cambios que no quisiste guardar, despues de guardarlos haces un 
+- git stash
+se va a quitar los ultimos cambios y los va poner en un stash por lo que lo eliminaremos ya que no los quiero
+- git stash drop

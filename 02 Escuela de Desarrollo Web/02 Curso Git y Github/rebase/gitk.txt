@@ -8,3 +8,12 @@ Cuando guardas cambios que no quisiste guardar, despues de guardarlos haces un
 - git stash
 se va a quitar los ultimos cambios y los va poner en un stash por lo que lo eliminaremos ya que no los quiero
 - git stash drop
+
+--------------------------------GIT CLEAN---------------------------
+sí añades muchos archivos que quieres quitar archivos que no estan en tu commit
+- git clean --dry-run::::::::::::::::::::::::::prepara los archivos
+- git clean -f :::::::::::::::::::::::::::::::: elimina los archivos
+
+--------------------------------Git cherry-pick---------------------
+traer algun commit especifico de una rama
+- git cherry-pick "numero id de commit"

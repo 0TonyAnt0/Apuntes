@@ -1,0 +1,9 @@
+- git shortlog::::::::::::::::::::::::::::comandos por miembro de equipo
+- git shortlog -sn ::::::::::::::::::::::::::::::::::::::::::::: resumido
+- git shortlog -sn --all ::::::::::::::::::::::::::::::::::::::: todos en absoluto
+- git shortlog -sn --all --nomages ::::::::::::::::::::::::::::: sin los merges
+- git config --global alias.stats
+- git blame ::::::::::::::::::::::::::::::::::::::::ver cada uno que hizo
+- git blame --help ::::::::::::::::::::::::::::::::: ayuda
+- git branch -r ::::::::::::::::::::::::::::::::::::::: branch remotas en servidor
+- git branch -a ::::::::::::::::::::::::::::::::::::::: todas las ramas

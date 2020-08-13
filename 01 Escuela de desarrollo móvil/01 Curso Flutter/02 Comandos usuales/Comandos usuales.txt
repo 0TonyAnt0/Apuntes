@@ -1,0 +1,81 @@
+añadir un archivo que no está de inicio o fuera de lib:::::::::
+-En el archivo pubspec.yaml buscar donde dice assets, quitar el numeral y añadir la dirección del archivo a usar
+Ejemplo:
+   assets:
+     - data/menu_opts.json
+
+************************* Comandos Main **************************
+- mateapp :::::::::::::::::::::::::::::::::::::::::::: Pone la base de código
+- debugShowCheckedModeBanner: false :::::::::::::::::: Quita la etiqueta de la esquina
+
+Despúes de añadir una página nueva es necesario quitar el scaffold por la clase nueva
+return MaterialApp(
+        title: 'Widgets',
+        debugShowCheckedModeBanner: false,
+        home: HomePageTemp()
+        );
+************************ Page home sin variables *******************************
+crear nueva pagina dentro de carpetas "src/pages" y importar package material
+- importM
+crear código de stateles widget con código.
+- stless: Flutter statelesWidget para paginas sin variables y nombrarlos depúes de class
+Sustituir conteiner po el tipo de contenido que guste como center.
+y depúes del body del name pponer la clase de la página que quieres que se visualice
+
+*************************** ListView ************************
+Es una lista, es como la lista de contactos del celular.
+- ListView ::::::::::::::::::::::::::: sirve para cargar todos los elementos 
+- ListViewbuilder :::::::::::::::::::: Los carga como los necesites tipo facebook
+
+Lo primero para crearlo será sustituir el center por un scaffold que sirverve
+para llamar ciertas reprecentaciones de diseño que se encuentran en la documentación.
+
+-appBar: AppBar() :::::::::::::::::: crea la barra superior
+-body: ::::::::::::::::::::::::::::: Es donde se hace el cuerpo
+- bosy:Listview() :::::::::::::::::: Crea la lista
+
+***********************Componentes de listView************************
+- children: <Widget>[] ::::::::: Ayudará a controlar las listas y dentro de
+este se podrán añadir los siguietes componentes.
+______________________________________________________________________
+- ListTile ::::::::::::::::::::::::::: sirve como titulos de lista
+           title: text(""):::::::::::: Pone nombre
+- Divider() :::::::::::::::::::::::::: Añade una linea para no tener todo pegado
+- subtitle: Text("Cualquier cosa"):::: subtitulos
+- leading: Icon(Icons.accessibility):: Primera imagen
+- trailing: Icon(Icons.keyboard_arrow_down)::: segunda imagen
+- onTap: () {}:::::::::::::::::::::::::::::::: añade funciones
+______________________________________________________________________
+
+
+
+******************** Hacer listas automaticas *********************
+Se haran con un for escribiendo el siguiente código.
+- for in :::::::::::::::::::::::::::: Desplegará el for que se necesita
+- for (String opt in opciones)::::::: opt obtendra el nombre en arreglo y opciones es el nombre del arreglo
+- y se traera el codigo deseado añadiendolo al return, como en el siguiente ejemplo
+
+::::::::::::::::::::::::::::::::Crear Items::::::::::::::::::::::::::
+final opciones = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
+
+List<Widget> _crearItems() {
+    List<Widget> lista = new List<Widget>();
+
+    for (String opt in opciones) {
+      final tempWidget = ListTile(
+        title: Text(opt),
+      );
+
+      lista.add(tempWidget);
+      lista.add(Divider());
+    }
+
+    return lista;
+  }
+
+
+
+
+
+
+

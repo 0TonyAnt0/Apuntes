@@ -1,0 +1,14 @@
+Algo de historia 😉
+1 – Fortran (1957)
+2 – Cobol (1959) …
+3 – Basic (1964) …
+4 – C (1969) …
+5 – Pascal (1970) …
+6 – C++ (1983) …
+7 – Perl (1987) …
+8 – Python (1991)
+9 – Ruby (1993)
+10 – PHP (1995)
+11 – Java (1995)
+12 – Javascript (1995)
+13 – Ruby On Rails (2005)

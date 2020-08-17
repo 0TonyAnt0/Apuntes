@@ -1,0 +1,7 @@
+::::::::::::::::::Prueba de Caja negra::::::::::::::
+mandarle datos y revisar lo que nos revisan, inputs y aotputs
+unit testing: De uno en uno
+integratión testing: todos juntos
+
+Pruebas de caja de cristal
+sirve muy bien para pruebas en loops y condicionales

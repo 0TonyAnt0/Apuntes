@@ -1,0 +1,2 @@
+Concatenacion de formato
+f'{"Hip"*3} hurra'    esto es igual a hacer  ('Hip '* 3 )+' '+'hurra'

@@ -1,0 +1,13 @@
+diccionario{
+	'David':35,
+	'Erika':43,
+	'Jaime':22,
+
+}
+quiero acceder, pero sí no existe regresa 30
+- diccionario.get('Juan',30)
+
+eliminar:
+- del diccionario['Jaime']
+
+- for llave in diccionario.keys():

@@ -5,3 +5,13 @@ integratión testing: todos juntos
 
 Pruebas de caja de cristal
 sirve muy bien para pruebas en loops y condicionales
+
+Excepciones: 
+
+- Se manejan con 3 keywords: try, except, finally
+
+
+
+Crear tu excepcion: se hace con:
+- #assert <nombre>, mensaje
+sí el programa no se ejecuta de manera correcta lanza la excepción

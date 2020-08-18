@@ -1,0 +1,7 @@
+Con estado: Aquellos que se heredan de stateFulWidget con los que el usuario interactua.
+	 - Checkbox, radio, slider, form, button.
+
+
+Sin estado: Aquellos que se heredan de stateLessWidget y no interactua. 
+	 - Icono, texto, contenedor con color
+

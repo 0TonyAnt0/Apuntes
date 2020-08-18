@@ -1,0 +1,8 @@
+- Crear una carpeta para colocar el archivo en la carpeta de mi app. "data"
+- Colocar el archivo json en esta carpeta.
+- para tener recursos externos a carpeta lib se tiene que:
+	- Buscar en el archivo pubspec.yaml la sección de assets.
+	- quitar los # y poner la dirección del archivo que queremos usar.
+- para leer json se hace una carpeta en lib llamada "providers"
+- dentro de está carpeta abrimos un nuevo archivo.dart
+- Crear una clase dentro de el nuevo archivo

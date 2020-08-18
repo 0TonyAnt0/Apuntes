@@ -1,0 +1,15 @@
+- Despues de crear la nueva clase se crea una lista tipo dynamic:
+	List<dynamic> *nombre* = []
+- Se crea el constructor, y se llama un nuevo metodo
+	*nombre de la clase*(){
+		*nombre metodo*();
+	}
+- Para leer el json se necesita importar la clase flutter/services
+	import 'package:flutter/services.dart' show rootBundle;
+
+- dentro del método se trabajará con la importación.
+		rootBundle.loadString(*dirección del archivo json*).then((data){
+     		print(data);
+      })
+//Esto regresa un future e imprime la data o los datos
+- 

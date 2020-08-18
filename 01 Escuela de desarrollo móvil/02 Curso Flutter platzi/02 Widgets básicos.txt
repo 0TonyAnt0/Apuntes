@@ -1,0 +1,10 @@
+Pagina para ver opciones de apps: https://startflutter.com/
+
+Widgets Básicos:
+	- Texto ---------------------- Mostrar texto
+			- 'texto', textAling, overflow, style: TextStyle
+	- Row ------------------------ Acomoda witget en una fila
+	- Columna -------------------- Acomoda en una columna
+	- Stack ---------------------- Acomodar un elemento encima de otro
+	- Container ------------------ Generar una caja de elementos (como un div)
+

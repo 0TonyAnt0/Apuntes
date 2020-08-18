@@ -1,0 +1,3 @@
+- ir a configuraciones for developers y activar developers mode.
+- panel de control, programas y turn windows fetures y buscar y activar windows subssystem for linux
+- entrar a windows store y buscar ubuntu e intalarlo.

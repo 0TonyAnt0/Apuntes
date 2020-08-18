@@ -1,0 +1,12 @@
+CODIGO PARA CREAR LLAVE:
+	- ssh-keygen -t rsa -b 4096 -c "esta es un llave"
+
+ssh-keygen: crear llave
+-t rsa: algoritmo para la llave
+-b 4096: cantidad de bits
+-c "": comentario
+
+- despúes de hacer esto pide donde se guardara.
+- se introduce una contraseña y se confirmará.
+
+

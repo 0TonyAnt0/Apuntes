@@ -1,0 +1,9 @@
+chmod : Cambia individualmente los permisos
+chown : cambia usuario a quien le pertenece
+chgrp : grupo de usuarios que puede acceder al archivo
+
+o=todos los demás usuarios
+- chmod o-w <nombre de archivo> quitar permiso de escritura a todos los demas usuario
+- chmod +x <nombre de archivo> poner permiso de ejecucuión a todos
+- chmod 760 cambia los permisos de todos, yo tengo todos, el grupo casi todos y los demás ninguno
+- chown <usuario> <archivo.txt> cambiar usuario.

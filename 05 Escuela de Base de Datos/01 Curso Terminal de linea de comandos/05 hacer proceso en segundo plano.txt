@@ -1,0 +1,21 @@
+1.- Poner un amperson al final del comando
+2.- precinar ctrl + z mientras se ejecuta
+- Para devolver el proceso que se está haciendo se preciona fg
+
+
+PS y TOP
+- ps:  muestra procesos que se están ejecutando
+- ps ax: muestra más detalles
+- ps ax |grep init : muestra lo que dice init
+
+
+-top: muestra todos los datos de la computadora en uso
+y con la q te sales
+
+
+Terminar proceso
+- ctl+C : sí está en primer plano
+- kill -9 <id de ps ax>: termina el proceso
+- killall <nombre de proceso> : termina el proceso
+
+  

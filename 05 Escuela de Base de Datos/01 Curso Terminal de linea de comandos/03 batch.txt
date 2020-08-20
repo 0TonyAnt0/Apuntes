@@ -1,0 +1,37 @@
+- cat: mostrar contenido
+- head: mostrar solo las primeras lineas
+- head -n<numero>: muetra solo las lineas que le indiques
+- tail -n<n>: muestra las ultimas lineas que le indiques
+
+
+- grep <lo que buscas> <archivo>: Busca concidencias en tu archivo y mostrar la linea
+- grep -i <lo que buscas> <archivo>: sin tomar en cuenta mayusculas y minusculas
+- grep -i <"lo que buscas"$> <archivo>: que termines con esto
+- grep “^palabra-clave” archivo_gigante.txt : ver si la incluye al principio
+
+
+- sed 's/nombre/nuevonombre/g' <archivo>: cambia palabras
+- sed '$d' <archivo>: alimina las ultimas lineas
+- awk -f ';' 'print $1' <archivo> : imprimir solo la promera columna
+
+Para esto podemos utilizar el comando sed. 
+Solo debemos indicarle que queremos realizar una 
+sustitución (s/), la palabra que vamos a cambiar 
+(NOMBRE_USUARIO), la nueva palabra que vamos a 
+incluir (Ana) y cerrar con el símbolo /.
+
+- sed ‘s/NOMBRE_USUARIO/Ana/’ archivo-saludo.txt
+
+
+Ahora imagina que, además del nombre, debemos 
+cambiar también la puntuación que obtuvo el usuario:
+
+- sed ‘s/NOMBRE_USUARIO/Ana/; s/PUNTOS_USUARIO/35/’ archivo-saludo.txt
+
+
+
+
+
+
+
+

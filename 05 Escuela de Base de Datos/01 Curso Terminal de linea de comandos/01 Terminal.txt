@@ -1,0 +1,17 @@
+Para ver los comandos que hemos usado, escribiremos:
+	- history
+y sí queremos poner uno de ellos, escribiremos el número y !
+	- !<numero del comando>
+
+./ significa a la carpeta que estamos ubicados
+touch <nombre> :::::::::::::::::::::::::::: Crear archivos
+mv <nombre> <ubicación/nombre> :::::::::::: Mover archivo
+rm <nombre> ::::::::::::::::::::::::::::::: Eliminar archivos
+rm -rf <nombre> ::::::::::::::::::::::::::: Eliminar carpetas
+cat <nombre> :::::::::::::::::::::::::::::: Ver archivo completo
+ls -l | more ::::::::::::::::::::::::::::: Ver archivo por partes
+cat <archivo>| wc -l:::::::::::::::::::::: Contar las lineas que tiene un archivo
+-<numero> tail <nombre> ::::::::::::::::::: ultimas lineas según el número
+cat <nombre> > copy_<nombre> :::::::::::::: Copiar un archivo
+open <nombre de archivo> :::::::::::::::::: abre un archivo con la app por defecto
+rmdir <directorio> :::::::::::::::::::::::: Borrar directorio

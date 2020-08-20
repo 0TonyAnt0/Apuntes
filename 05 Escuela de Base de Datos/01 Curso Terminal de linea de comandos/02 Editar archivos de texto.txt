@@ -1,0 +1,11 @@
+Para editar el archivo de texto desde la consola, se hace con:
+- vim <archivo.txt>
+Escribes lo que necesitas con la i en modo inserción y cuando acabas precionas 
+esc luego los dos puntos :w y se guardara lo que hayas echo.
+para salir del vim es con :q y te sales.
+:x grabar y salir
+El otro es:
+- nano <archivo.txt>
+En el aparecen los caracteres a precionar, salir con ctl + x
+
+ 

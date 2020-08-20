@@ -1,0 +1,9 @@
+locate : locate <archivo>   aunque locate se maneja mediante una base de datos que debe ser actualizada perodicamente con:
+- sudo updatedb
+
+
+whereis: whereis <archivo> ubicar archivos binarios
+
+find:
+find [ruta][expresión_de_búsqueda][acción] 
+

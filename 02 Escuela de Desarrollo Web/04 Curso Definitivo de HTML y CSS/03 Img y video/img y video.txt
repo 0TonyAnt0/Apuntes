@@ -1,0 +1,10 @@
+<video src="video.mp4#t=10,60" controls preload="auto">
+controls :::: Añade controles 
+preload="auto" ::: Lo comienza a cargar antes
+El # me ayuda a reproducir el minuto 10 al 60 
+
+Las imagenes van entre figure y figurecption etiquetas para contener la imagen
+
+Para cargar video en diferentes opciones, se necesita
+<video controls preload="auto">
+<source src="video.mp4#t=10,60">

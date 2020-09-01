@@ -1,0 +1,45 @@
+
+Toda la página va entre las etiquetas de html, con el atributo lang que sirve para definir el idioma:
+```
+<html lang="es">
+</html>
+```
+Html se separa en 2, el head que es la parte en la que irán todas las definiciones y links que ayudarán a la página a mejorar, y el body en el que irá todo lo visible o lo que se va a mostrar al usuario:
+
+```
+<head>
+</head>
+<body>
+</body>
+```
+Dentro del head van diferentes etiquetas como son:
+
+La etiqueta meta UTF-8 se encarga de brindar una definición de caracteres basado en en código ASCII a nuestra página.
+
+```
+    <meta charset="UTF-8" />
+```
+La etiqueta meta con atributo name, nos ayuda con la descripción de nuestra página que muestra el navegador y nos ayuda en el posicionamiento.
+```
+<meta name="description" content="Esta página te mostrará fotos de gatos" />
+```
+La etiqueta meta con atributo robots, nos ayuda a que los bots de los navegadores acomoden nuestra página para brindar la parte que está buscando el usuario.
+```
+<meta name="robots" content="index,follow" />
+```
+La etiqueta title, nos ayuda a mostrar el titulo de nuestra página en la parte superior de la pestaña del navegador. 
+```
+<title>Platzi</title>
+```
+La etiqueta meta con viewport ayuda a la página a ser responsiva (A adaptarse a la pantalla en la que se esta mostrando).
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+Con link stalesheet vinculamos nuestra página de estilos css.
+
+```
+<link rel="stylesheet" href="./css/style.css" />
+    desafio
+```
+
+    

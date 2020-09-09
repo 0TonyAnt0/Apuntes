@@ -1,0 +1,21 @@
+1. Crear un nuevo proyecto en firebase.com
+2. Ingresar proyecto Android y luego Ios para configurar de forma independiente cada uno
+3. Primero haremos el de android
+
+4. Traer nombre de la app.
+ - Entrar a carpeta android/app/build.gredle
+ - Buscar defaultConfig y copiar lo que diga en applicationID.
+5. Para traer la firma SH1
+ -Ir a archibo en firebase para saber más
+6. Descargar archivo Json y guardar en android/app
+7. En android/app/build.gredle cambiar en default config la versión 16 a 21
+8. Hacer ultimos pasos en la app
+ - copiar classpath 'com.google.gms:google-services:4.3.3' en android/build.gragle
+ - Pegar en DEPENDENCIAS
+ - Copiar en android/app/build.gragle
+ - Pegar en HASTA ABAJO
+
+
+
+
+

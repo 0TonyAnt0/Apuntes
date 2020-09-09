@@ -1,0 +1,7 @@
+Una forma fácil de obtener el Certificado de firma de depuración es:
+
+Acceder a la ruta android>app>src>main>java>io.flutter.pugins>GeneratedPluginsRegistrant
+Una vez abierto el editor, arriba y a la derecha aparece un botón con el 
+nombre “gradle”. Hay que abrirlo, seleccionar “Tasks” 
+y luego “SigninReport”. Se abrirá abajo una terminal con el resultado de 
+lo que buscamos. Luego de copiar el código SHA1, se puede cerrar el editor.

@@ -1,0 +1,13 @@
+1.Hacer metodo singOut en firebaseOut en repository
+2. Hacer el metodo intermedio en auth repository
+	- signOut() => _firebaseAuthAPI.signOut();
+3. se llama al metodo intermedio en bloc/bloc_user.dart
+	- signOut() { _auth_repository.signOut();}
+4. En la zona de botones
+ 	- añadir objeto UserBloc userBloc; a nivel de clase
+	- crear variable of
+	- userBloc = BlocProvider.of(context);
+	- y llamar en onpress   userBloc.signOut(); 
+
+
+

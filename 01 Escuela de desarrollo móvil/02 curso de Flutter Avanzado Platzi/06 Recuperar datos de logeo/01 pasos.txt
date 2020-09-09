@@ -1,0 +1,19 @@
+1. En la pantalla de perfil
+	- Hacer objeto bloc UserBloc userBloc;
+	- Hacer objeto userBloc = BlocProvider.of<UserBloc>(context);
+	- En return devolver clase StreamBuilder() para estár alerta de cambios
+	- dentro de la cual de hara la lectura de datos y las condiciones
+	- crearemos un metodo donde se vera lo que leyo snapshop por lo que
+		le pasaremos el metodo 
+	- en el witget pondremos la validación con un if y pondremos los datos
+2. Crear clase user.dart en model
+	- Esto contendra todos los datos que se traeran de user
+3. Hacer objeto de User en la pagina de perfil
+	- con el objeto se mandan los valores user = User(
+          name: snapshot.data.displayName,
+          photoUrl: snapshot.data.photoUrl,
+          email: snapshot.data.email);
+	- se aignan los valores a donde vayan
+
+
+

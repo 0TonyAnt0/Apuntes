@@ -1,0 +1,8 @@
+https://platzi.com/clases/1603-flutter-avanzado/20224-aplicando-providers-al-proyecto/
+https://pub.dev/packages/generic_bloc_provider/install
+
+- Copiar depend on it: generic_bloc_provider: ^1.0.9
+
+- y se coloca en el archivo pubspec.yaml en la parte de dependencias (No en test)
+
+- 

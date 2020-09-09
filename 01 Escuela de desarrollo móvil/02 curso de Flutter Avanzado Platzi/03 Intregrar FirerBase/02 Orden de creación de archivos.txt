@@ -1,0 +1,18 @@
+1. FirebaseAPI
+2. Añadir todas las extenciones a pubspec
+3. Habilitar metodo de inicio de sesión
+4. crear auth_reposytory
+5. Crear bloc_user.dart
+6. En la pagina de inicio a niver de la segunda clase se llamará el objeto de Bloc  UserBloc userBloc;
+7. Instanciar objeto dentro de build de esta clase mediante el bloc provider que se puso en el main
+	userBloc=BlocProvider.of(context);
+8. añadir a userBloc   
+ - Stream<FirebaseUser> streamFirebase =FirebaseAuth.instance.onAuthStateChanged;
+ - Stream<FirebaseUser> get authStatus => streamFirebase; 
+9. En la pantalla de lógin separar el return con otro widget y crear
+ - Widget _manejarEstadoSesion() {
+    return StreamBuilder(
+
+
+
+		

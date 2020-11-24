@@ -1,0 +1,14 @@
+Container(
+                  width: 70.0,
+                  child: ButtonPurple(
+                      buttonText: "Add Place",
+                      onPressed: () {
+                        //1.- FireBase Storage
+                        //Devuelve una URL
+                        //2.- Se manda a cloud firestore
+                        //Place title, decription, url, userowner, likes
+                      }),
+                ),
+Se tiene que acomodar todo para la lectura de los datos con firebase.
+
+1.- 

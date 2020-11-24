@@ -1,0 +1,9 @@
+Navigator.of(context).pop();-----------------------Destruir pantalla
+
+Navigator.push(
+	context, MaterialPageRoute(builder:(BuildContext context)
+	= NombrePagina() ))
+
+-----------Sirve para sobreponer una página
+Nota: Añadir a todos los flotingActionButton la propiedad heroTag:null
+Para más opciones de navegacion: https://platzi.com/clases/1603-flutter-avanzado/20600-navegacion-entre-pantallas-en-flutter/

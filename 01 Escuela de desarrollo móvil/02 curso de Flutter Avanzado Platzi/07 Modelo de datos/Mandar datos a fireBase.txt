@@ -1,0 +1,17 @@
+- Crear en user.dart todas las variables que va a tener nuestro usuario ya sean listas o variables además de añadir el id.
+- En el constructor se pongra los que son requeridos como required, y los que no pues no.
+- Editar todos los que se necesiten e esta caso place.dart, y haremos lo mismo que con usuarios.dart.
+- En el caso de ser fotos se le añadira una relacion con quien la publique para eso sirve userOwner.
+- En la carpeta user se creará el archivo en la carpeta repository "cloud_firestore_api.dart" se manejará la lógica para subir una usuario a la BD.
+- crear el archivo cloud_firestore_repository.dart
+- Crear caso de uso 2. Registrar usuario en BD en el bloq
+- Crear en el boton de login
+ UserBloc.signIn().then((FirebaseUser user) {
+                  userBloc.updateUserData(User(
+                      //Mandar que nos brinda Gmail a la BD
+                      uid: user.uid,
+                      name: user.displayName,
+                      email: user.email,
+                      photoURL: user.photoUrl));
+                }
+

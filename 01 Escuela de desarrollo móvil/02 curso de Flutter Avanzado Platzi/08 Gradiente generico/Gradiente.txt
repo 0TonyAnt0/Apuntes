@@ -1,0 +1,6 @@
+El gradiente generico de usa en widget general y gradiente
+se usan condiciones y variables como:
+	MediaQuery.of(context).size.height; //Sacar altura de la pantalla
+        MediaQuery.of(context).size.width; //Sacar ancho de la pantalla
+
+Para evitar errores de tamaño usamos flexible()

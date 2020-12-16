@@ -10,5 +10,72 @@ Container(
                       }),
                 ),
 Se tiene que acomodar todo para la lectura de los datos con firebase.
+-Entramos a cloudFirestoreapi y ahí controlaremos el estado de la subida.
+- Haremos un objero de tipo place(donde estan los datos place en model) en un metodo Future
+		Future<void> updatePlaceDate(Place place) async {}
+- Anidado adentro se pondra una referencia de una coleccion
+		CollectionReference refPlaces = _db.collection(PLACES);
+- Con la referencia mandaremos los datos a el model del place, con mapa de datos
+	await refPlaces.add()
+- userOwner es un tipo de dato referencia, osea pondremos una ruta en la BD
+		'userOwner': "${USERS}/${user.uid}"
+- Para poder hacer esto se necesitará hacer uno pasos extra
+- Traer entidad.
+	final FirebaseAuth _auth = FirebaseAuth.instance;
+-Traer al usuario actualmente logueado
 
-1.- 
+	_auth.currentUser().then((FirebaseUser user){}
+
+- Al final el codigo debera quedar así: 
+
+Future<void> updatePlaceDate(Place place) async {
+    CollectionReference refPlaces = _db.collection(PLACES);
+    _auth.currentUser().then((FirebaseUser user) {
+      refPlaces.add({
+        'name': place.name,
+        'description': place.description,
+        'likes': place.likes,
+        'userOwner':
+            "${USERS}/${user.uid}", //reference: tipo de dato referencia forykey
+      });
+    }); //Saca el nombre del usuariologueado paso 2
+  }
+
+
+- Poner la siguiente linea en cloud_firestore_repository, esto,llama al metodo que llena los datos
+
+  Future<void> updatePlaceData(Place place) =>
+        _cloudFirestoreAPI.updatePlaceData(place); 
+
+- Y la siguiente linea en blocUser, donde llamaremos al metodo.
+		Future<void> updatePlaceDate(Place place) =>
+      _cloudFirestoreRepository.updatePlaceData(place);
+
+-Declarar userBloq en en lugar del formulario
+	 UserBloc userBloc = BlocProvider.of<UserBloc>(context); debajo de Widget build
+
+- Dentro del boton pondremos el siguiente codigo:
+onPressed: () {
+                        //1.- FireBase Storage
+                        //Devuelve una URL
+                        //2.- Se manda a cloud firestore
+                        //Place title, decription, url, userowner, likes
+                        userBloc
+                            .updatePlaceData(Place(
+                          name: _controllerTitlePlace.text,
+                          description: _controllerDescriptionPlace.text,
+                          likes: 0,
+                        ))
+                            .whenComplete(() {
+                          //Cuando termine de cargar
+                          print("Termino");
+                          Navigator.pop(
+                              context); //Regresar a la ventana anterior
+                        });
+                      }
+
+
+Para formularios:
+https://platzi.com/clases/1603-flutter-avanzado/20594-formularios-en-flutter/
+
+

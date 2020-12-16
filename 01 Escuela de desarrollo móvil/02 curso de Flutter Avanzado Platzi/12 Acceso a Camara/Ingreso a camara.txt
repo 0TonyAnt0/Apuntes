@@ -1,0 +1,25 @@
+1.- Necesitaremos un libreria por lo que tendremos que.
+	-Importar desde pubspec.yaml poner 
+  		*image_picker: ^0.5.4+3*
+2.- En el boton donde se habre el add place se añadira el codigo de la siguiente forma:
+	CircleButton(
+                false, Icons.add, 40.0, Color.fromRGBO(255, 255, 255, 1), () {
+              //Enviar y añadir nueva pagina de frente
+              ImagePicker.pickImage(
+                      source: ImageSource.camera) //Se abre la camara
+                  .then((File image) {
+                //Se captura la foto en una variable
+                Navigator.push(
+                    //Se crea la ventana
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => AddPlaceScreen(
+                              image: image, //Se manda la foto a la addPlace
+                            )));
+              }).catchError((onError) =>
+                      print("onError")); //Se captura en caso de error
+            })
+
+3.- Mostrar la foto en el addPlace
+	-En el lugar donde mostramos la foto ponerlo asi
+		pathImage: widget.image.path

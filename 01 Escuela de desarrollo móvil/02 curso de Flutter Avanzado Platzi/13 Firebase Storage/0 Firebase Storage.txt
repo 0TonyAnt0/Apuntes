@@ -1,0 +1,8 @@
+Aditamento con el que podemos mantener y guardar documentos o fotos e información
+1.- Para usarlo necesitamos el id del usuario por lo que iremos a userBloc
+	- Pondremos el sig. código:
+	  Future<FirebaseUser> get currentUser => FirebaseAuth.instance.currentUser();
+	- 		
+
+
+

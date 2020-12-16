@@ -1,0 +1,14 @@
+import 'dart:io';
+
+import 'package:firebase_storage/firebase_storage.dart';
+
+class FireBaseStorageApi {
+  final StorageReference _storageReference = FirebaseStorage.instance
+      .ref(); //Obtiene la referencia que va a corresponder a la url
+  Future<StorageUploadTask> uploadFile(String path, File image) async {
+    StorageUploadTask storageUploadTask = _storageReference
+        .child(path)
+        .putFile(image); //Resivir path o direccion para guardar imagen
+    return storageUploadTask;
+  }
+}

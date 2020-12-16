@@ -1,0 +1,2 @@
+Future<StorageUploadTask> uploadFile(String path, File image) =>
+      _firebaseStorageRepository.uploadFile(path, image);
